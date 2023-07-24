@@ -41,7 +41,6 @@ btn.addEventListener("click", function () {
   while (randomNumbers.length < parseInt(res.value)) {
     var randomNum = Math.floor(Math.random() * parseInt(pop.value)) + 1; //generate random numbers
     if (randomNumbers.indexOf(randomNum) === -1) {
-      // -1 equals to not present, so gina-check na if present run ang generated number sa array.. if not then push na
       randomNumbers.push(randomNum);
     }
   }
