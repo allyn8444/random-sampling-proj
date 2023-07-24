@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Sampling</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <form id="form" action="">
+        <input
+          type="text"
+          id="e"
+          class="population inputs"
+          placeholder="Population"
+          required
+        />
+
+        <input
+          type="text"
+          class="respondents inputs"
+          placeholder="Respondents"
+          required
+        />
+      </form>
+      <button class="confirm" disabled>Confirm</button>
+
+      <div class="sign">made by Allyn</div>
+    </div>
+
+    <div id="popup">
+      <div id="result">
+        <button type="button" id="close" onclick="hide()">X</button>
+        <div class="result-container">
+          <h1>RESULT:</h1>
+          <h2 class="results"></h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
